@@ -1,0 +1,183 @@
+:root{
+--color1:#ffff;
+--color2:#232323;
+--text:'Arial', sans-serif;
+
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+.container {
+    flex: 1; 
+}
+
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Main Section */
+main {
+    padding: 20px 0;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 0;
+    background: url('travel.jpg') no-repeat center center/cover;
+    color: var(--color1);
+    
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    color: #000;
+}
+
+.intro p {
+    color: #000;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    transition: .4s ease-in-out;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #008cba;
+}
+
+.destinations {
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+.destination img:hover{
+    
+    border-radius: 30px;
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+.destinations h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.destination-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+
+.destination {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+
+.destination h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.destination p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; 
+}
+
+
+footer p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul.a {
+    list-style-type: circle;
+  }
+
+  
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
